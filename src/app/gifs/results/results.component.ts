@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class ResultsComponent implements OnInit {
   constructor(private _gifsService: GifsService) {}
 
-  get results(): Observable<Data[]> {
+  get results(): Data[] {
     return this._gifsService.results;
   }
 

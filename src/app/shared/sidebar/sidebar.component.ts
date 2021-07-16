@@ -13,4 +13,8 @@ export class SidebarComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  getHistories(query: string): void {
+    this._gifsService.getGifs(query);
+  }
 }

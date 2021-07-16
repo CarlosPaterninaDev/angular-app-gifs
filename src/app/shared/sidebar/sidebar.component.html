@@ -3,6 +3,7 @@
   <hr class="text-white" />
   <div class="list-group list-reset">
     <a
+      (click)="getHistories(history)"
       *ngFor="let history of histories"
       class="list-group-item list-group-item-action"
       href="#"
